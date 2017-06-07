@@ -4,34 +4,8 @@ jQuery(function() {
 
   //land page to race game
   $('button').click(function(){
-    var player1 = $("#player1").val();
-    $('#yellow').html(player1);
-    var player2 = $("#player2").val();
-    $('#red').html(player2);
+      window.location.href='game-page.html';
   });
-
-
-
-// function getUrlName()
-// {
-//     var name = [], hash;
-//     var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-//     for(var i = 0; i < hashes.length; i++)
-//     {
-//         hash = hashes[i].split('=');
-//         name.push(hash[0]);
-//         name[hash[0]] = hash[1];
-//     }
-//     return name;
-//     // console.log(name);
-// }
-// getUrlName();
-// // console.log(getUrlName);
-
-// var $playerOne = getUrlName()["name"];
-// $('#result').append($playerOne);
-// $('#result').text("Welcome " + $playerOne + "!");
-
 
   //reset button on home page
   $('#reset').click(function(){
@@ -46,11 +20,29 @@ jQuery(function() {
   var row = 5;
   var column = 6;
   var boardCircles = [];
+  var players = [];
+
+  //this click event grabs the player's name and save into an array: DOES NOT WORK
+  $(".submit-button").click(function() {
+    var inputName1 = $("#player1").val();
+    console.log(inputName1);
+    players.push(inputName1);
+    $('#yellow').html(inputName1);
+
+    var inputName2 = $("#player2").val();
+    console.log(inputName2);
+    players.push(inputName2);
+    $('#red').html(inputName2);
+
+      $('input[name=player]').each(function() {
+         players.push($(this).val());
+      });
+  });
 
   console.log(players);
 
   //print current player to start the game
-  var currentPlayer =  $('#current-player').text("Player 1");
+  var currentPlayer =  $('#current-player').html("Player 1");
 
   //creating board spots where index i represents rows and j represents columns
   for (var i = 0; i < row; i++) {
