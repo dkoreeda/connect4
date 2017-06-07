@@ -1,0 +1,25 @@
+Name of the game: Connect 4
+
+a. 2 players have different colored pieces
+b. Board: 7x6 pieces (width x height)
+c. The goal is to get 4 pieces of your own color in a row
+d. With the game board there are openings at the top where you put the pieces
+e. Then the pieces slide down inside the board as far as they can go
+
+
+Rules:
+1. In order to win, the player can get the 4 pieces in a row vertically or horizontally or on an angle
+2. The player has to use his/her pieces to block his/her opponent
+3. The first player to get 4 in a row wins
+
+
+Foreseen challenges or obstacles:
+OK 1. Create array (row x column) that will save the position of pieces
+OK 2. Apply CSS style and Javascript to slide down pieces inside the board - from the top of it to an available spot in a particular column in the array
+OK 3. Write the winner logic with all possibilities regarding vertical, horizontal and diagonal combinations
+4. Media query for tablets, cellphones and laptops/desktops
+
+Technology:
+
+
+
