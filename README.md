@@ -4,7 +4,7 @@ a. 2 players have different colored discs: red or yellow
 
 b. Blue board: 6x5 discs (width x height)
 
-c. The game board has gaps at the top where the player drop the disc and it falls straight down as far as it can go, occupying the next available space within that column
+c. The game board has gaps at the top where a player drops a disc and it falls straight down as far as it can go, occupying the next available space within that column
 
 d. The player has to use his/her own pieces to block his/her opponent
 
